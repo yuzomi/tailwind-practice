@@ -3,10 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <title>Resume - yuzomi</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300&display=swap"
+      href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css"
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -38,7 +36,7 @@
             </div>
             <div class="py-1">
               <div class="font-semibold text-gray-600">Adress</div>
-              <div class="text-gray-500 text-sm">
+              <div class="text-gray-500 text-sm font-hi">
                 <div>서울시 행복구 행복로</div>
                 <div>행복팰리스 101동</div>
               </div>
@@ -117,7 +115,7 @@
         <div class="col-span-2 pl-10">
           <div>
             <div
-              class="text-blue-500 lg:text-7xl xl:text-5x1 font-bold mt-10 sm:pr-20 text-5xl hover:text-pink-300"
+              class="text-blue-500 lg:text-7xl xl:text-5x1 font-bold mt-10 sm:pr-20 text-5xl hover:text-pink-300 font-bl"
             >
               yuzomi
             </div>
@@ -333,5 +331,17 @@
         © Yuzomi. All rights reserved.
       </div>
     </div>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"NanumSquareRound"'],
+              bl: ["NanumSquareRoundExtraBold"],
+            },
+          },
+        },
+      };
+    </script>
   </body>
 </html>
